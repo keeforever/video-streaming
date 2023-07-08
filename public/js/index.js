@@ -48,7 +48,7 @@ let localStream, localPeerConnection, remotePeerConnection;
 
 let constraints = {
   video: true,
-  audio: false
+  audio: true
 }
 
 let server = null;
