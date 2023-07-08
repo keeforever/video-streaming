@@ -234,7 +234,7 @@ const getInviteBtn = ()=>{
     })
 
     socket.on(roomInputLocal.value + "local", (answer)=>{
-      console.log('final')
+      console.log('final',answer)
       localPeerConnection.setRemoteDescription(JSON.parse(answer))
     })
   }
