@@ -19,7 +19,9 @@ io.on("connection", (socket) => {
 
   socket.on("room", ({ roomID, offer , answer}) => {
     console.log("roomID :" , roomID)
-    console.log(answer)
+    console.log("answer", answer)
+    console.log("offer", offer)
+    
     socket.emit(roomID + "remote", offer)
     socket.emit(roomID + "local", answer)
   })
