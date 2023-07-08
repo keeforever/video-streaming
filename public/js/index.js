@@ -125,7 +125,7 @@ const localSignal = async ()=>{
 
 
 // remote signal
-const remoteSignal = async ()=>{
+const remoteSignal = async (offer)=>{
 
   remotePeerConnection.onicecandidate = (event)=>{
     if(event.candidate){
@@ -220,9 +220,8 @@ const acceptRoomId = ()=>{
   remoteID = roomInputRemote.value
   console.log(remoteID)
   socket.on(remoteID + "remote", (offer)=>{
-    console.log(remoteID, "socket.on.remote")
-    offer = offer
-    remoteSignal()
+    console.log(remoteID, offer,"socket.on.remote")
+    remoteSignal(offer)
   })
 }
 
