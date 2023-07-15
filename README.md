@@ -1,6 +1,3 @@
-# webRTC Laboratory
+# test video streaming
 
-- Messaging.
-- Video and Audio streaming.
-
-Live ✨ : https://webrtc-lab.netlify.app/
+Live ✨ : https://video-streamin-api.onrender.com
